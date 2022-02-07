@@ -1,0 +1,15 @@
+let instance = await RandomNumberConsumer.deployed()
+let accounts = await web3.eth.getAccounts()
+
+instance.getRandomNumber()
+instance.fulfillRandomness(100,100)
+
+instance.awardItem(accounts[2], "https://game.example/item-id-8u5h2m.json")
+
+
+
+instance.balanceOf('0x35A43AaE1F887B59fe222782B39A174e4699584f')
+
+
+ropsten address:
+    0x3E6c8eD74d83945dA931c2a3CCF4E7a39111FeED
